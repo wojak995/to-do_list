@@ -88,10 +88,14 @@ function showStyle() {
   if (taskList.length > 0) {
     taskList.forEach((item, index) => {
       let span = allLi[index].childNodes[1]
+      let icon = allLi[index].childNodes[3]
+      console.log(icon)
       if (item[1] === true) {
         span.classList.add('done')
+        icon.setAttribute('name', 'close-circle-outline')
       } else {
         span.classList.remove('done')
+        icon.setAttribute('name', 'checkmark-circle-outline')
       }
     })
   } else {
