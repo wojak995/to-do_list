@@ -60,6 +60,7 @@ section {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   height: 25px;
+  padding-left: 5px;
 }
 
 .task-input-container a {
@@ -95,6 +96,7 @@ ion-icon:hover {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   padding: 5px;
+  margin-bottom: 5px;
 }
 
 .task-list span {
@@ -111,4 +113,8 @@ span + ion-icon {
 
 .task-list ion-icon ~ ion-icon {
   color: red;
+}
+
+.done {
+  text-decoration: line-through;
 }
