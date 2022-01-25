@@ -1,0 +1,114 @@
+:root {
+  --clr-bg-dark: #03000e;
+  --clr-pink: #ff00f2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+}
+
+section {
+  min-height: 100vh;
+  background-image: url(blob-scene.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  min-width: 400px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  padding: 15px 30px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-input-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 5px 15px 5px;
+  margin-bottom: 10px;
+}
+
+.task-input-container input {
+  all: unset;
+  min-width: 250px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  height: 25px;
+}
+
+.task-input-container a {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+ion-icon:hover {
+  transition: 0.3s;
+  transform: scale(110%);
+}
+
+.task-list-container {
+  width: 100%;
+  min-height: 400px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 15px;
+  margin-top: 10px;
+}
+.task-list {
+  list-style: none;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  min-height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.task-list span {
+  width: 75%;
+}
+
+.task-list ion-icon {
+  font-size: 1.5rem;
+}
+
+span + ion-icon {
+  color: #5fec00;
+}
+
+.task-list ion-icon ~ ion-icon {
+  color: red;
+}
